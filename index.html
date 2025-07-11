@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Produtividade</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Produtividade por Hectare</h2>
+
+    <label for="distancia">Distância colhida (Metros)</label>
+    <input type="text" id="distancia">
+
+    <label for="peso">Peso do transbordo (Tonelada)</label>
+    <input type="text" id="peso">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="result" id="resultado"></div>
+  </div>
+
+  <p class="adauto">Adauto Furich &copy;</p>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

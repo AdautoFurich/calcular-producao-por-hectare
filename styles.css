@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #1E88E5;
+    --accent-color: #1565C0;
+    --bg-color: #f4f6f8;
+    --text-color: #333;
+    --border-radius: 10px;
+    --input-bg: #fff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --focus-shadow: 0 0 8px rgba(30, 136, 229, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: url(imagens/Colhedora3.webp);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: var(--input-bg);
+    padding: 40px 35px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 25px;
+    text-shadow:
+        1px 1px 0 white,
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        -1px -1px 0 white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg);
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+input:focus {
+    border-color: rgb(245, 245, 245);
+    box-shadow: var(--focus-shadow);
+    outline: none;
+    background-color: #fefefe;
+}
+
+button {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 14px;
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 255);
+}
+
+.result {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(4, 4, 4);
+    text-shadow:
+        1px 1px 0 white,
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        -1px -1px 0 white;
+}
+
+.error {
+    color: #d32f2f;
+}
+
+.adauto {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
